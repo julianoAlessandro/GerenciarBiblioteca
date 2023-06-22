@@ -32,7 +32,7 @@ class Autor {
     }
 
     public function excluir(){
-        $sql = "DELETE FROM autores WHERE id_autor".$this -> id_autor;
+        $sql = "DELETE FROM autores WHERE id_autor = ".$this -> id_autor;
         include_once "classes/conexao.php";
         $conexao -> exec($sql);
     }
